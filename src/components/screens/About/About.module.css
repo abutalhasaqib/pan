@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+}
+@media only screen and (max-width: 1023px) {
+  .row {
+    display: block;
+  }
+}
+
+.col {
+  flex: 0 0 100%;
+  width: 100%;
+  padding-right: 8px;
+}
+@media only screen and (max-width: 1259px) {
+  .col {
+    flex: 0 0 calc(100% - 296px);
+    width: calc(100% - 296px);
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .col {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.card:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.rowField {
+  margin-bottom: 20px;
+}
+
+.pic {
+  width: 250px;
+  height: 200px;
+  margin-top: -20px;
+}/*# sourceMappingURL=About.module.css.map */

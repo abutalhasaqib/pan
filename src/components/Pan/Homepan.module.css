@@ -1,0 +1,11 @@
+.panheader {
+  width: 100%;
+  left: 0;
+}
+
+.homepanItems {
+  margin-top: 72px;
+  display: flex;
+  padding: 10px;
+  height: calc(100vh - 72px);
+}/*# sourceMappingURL=Homepan.module.css.map */

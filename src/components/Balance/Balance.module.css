@@ -1,0 +1,45 @@
+.negative,
+.positive {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3333333333;
+}
+.negative svg,
+.positive svg {
+  margin-right: 4px;
+}
+
+.negative {
+  color: #FF6A55;
+}
+.negative svg {
+  fill: #FF6A55;
+}
+
+.positive {
+  color: #83BF6E;
+}
+.positive svg {
+  fill: #83BF6E;
+}
+
+.background.positive, .background.negative {
+  height: 24px;
+  padding: 0 4px;
+  border-radius: 8px;
+}
+.background.positive {
+  background: #EAFAE5;
+}
+:global(.dark-mode) .background.positive {
+  background: rgba(234, 250, 229, 0.25);
+}
+
+.background.negative {
+  background: #FFE7E4;
+}
+:global(.dark-mode) .background.negative {
+  background: rgba(255, 216, 211, 0.15);
+}/*# sourceMappingURL=Balance.module.css.map */

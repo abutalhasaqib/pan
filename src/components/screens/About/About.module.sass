@@ -1,0 +1,30 @@
+@import ../../../styles/helpers
+
+.row
+    display: flex
+    +t
+        display: block
+
+.col
+    flex: 0 0 100%
+    width: 100%
+    padding-right: 8px
+    +d
+        flex: 0 0 calc(100% - 296px)
+        width: calc(100% - 296px)
+    +t
+        width: 100%
+        padding: 0
+        
+
+.card
+    &:not(:last-child)
+        margin-bottom: 8px
+
+.rowField
+    margin-bottom: 20px
+
+.pic
+    width: 250px
+    height: 200px
+    margin-top: -20px
