@@ -5,17 +5,17 @@ import styles from "./Page.module.sass";
 import Sidebar from "../Sidebar";
 import Header from "../Header";
 
-const Page = ({ wide, children, title }) => {
+const Page = ({ wide, children, title , hideSidebar}) => {
   const [visible, setVisible] = useState(false);
 
   return (
     <>
       <div className={styles.page}>
-        <Sidebar
+       {!hideSidebar && <Sidebar
           className={cn(styles.sidebar, { [styles.visible]: visible })}
           onClose={() => setVisible(false)}
-        />
-        <Header onOpen={() => setVisible(true)} />
+        />}
+        <Header onOpen={() => setVisible(true)} searchbar={false}/>
         <div className={styles.inner}>
           <div
             className={cn(styles.container, {
