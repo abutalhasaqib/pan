@@ -9,6 +9,7 @@ import About from "./components/screens/About";
 import ManageOrganizations from "./components/screens/Organizations/ManageOrganizations";
 import ManageAccounts from "./components/screens/Organizations/ManageAccounts";
 import Homepan from "./components/Pan/Homepan";
+import JoinasAdmin from "./components/JoinAdmin/JoinasAdmin";
 
 function App() {
   return (
@@ -89,6 +90,13 @@ function App() {
           render={() => (
             <Page title="Home">
               <Home />
+            </Page>
+          )}
+        />
+        <Route exact path="/admin-registration"
+          render={() => (
+            <Page title="Join as Admin">
+              <JoinasAdmin />
             </Page>
           )}
         />

@@ -26,17 +26,17 @@ const Header = ({ onOpen, searchbar, menu, className  }) => {
     {
       title: "About Us",
       icon: "info",
-      url: "/about",
+      url: "",
     },
     {
       title: "Why Get Pan",
       icon: "design",
-      url: "/getpan",
+      url: "",
     },
     {
       title: "Join as Admin/Distributor",
       icon: "edit",
-      url: "/joinadmin",
+      url: "/admin-registration",
     },
   ]
 

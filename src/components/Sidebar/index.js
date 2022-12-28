@@ -79,12 +79,12 @@ const headerMenu = [
   {
     title: "Why Get Pan",
     icon: "design",
-    url: "/getpan",
+    url: "/",
   },
   {
     title: "Join as Admin/Distributor",
     icon: "edit",
-    url: "/joinadmin",
+    url: "/admin-registration",
   },
 ]
 
