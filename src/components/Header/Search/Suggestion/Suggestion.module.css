@@ -1,0 +1,58 @@
+.link {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+}
+.link:hover .title {
+  color: #2A85FF;
+}
+.link:hover .arrow {
+  transform: translateX(2px);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  border-radius: 50%;
+  border: 2px solid #CABDFF;
+}
+.icon svg {
+  fill: #1A1D1F;
+}
+:global(.dark-mode) .icon svg {
+  fill: #FCFCFC;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.content {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2307692308;
+  color: #6F767E;
+}
+
+.title {
+  margin-bottom: 4px;
+  color: #1A1D1F;
+  transition: color 0.2s;
+}
+:global(.dark-mode) .title {
+  color: #FCFCFC;
+}
+
+.arrow {
+  margin-left: 24px;
+  transition: transform 0.2s;
+}
+.arrow svg {
+  fill: #9A9FA5;
+}/*# sourceMappingURL=Suggestion.module.css.map */

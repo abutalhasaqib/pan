@@ -1,0 +1,140 @@
+@import ../../../../../styles/helpers
+
+.container
+    margin-top: 60px;
+    overflow: auto;
+    height: 470px
+    &::-webkit-scrollbar
+        width: 10px
+    &::-webkit-scrollbar-track 
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+        border-radius: 10px
+    &::-webkit-scrollbar-thumb 
+        background: grey; 
+        border-radius: 10px;
+
+.row
+    display: flex
+    +t
+        display: block
+
+.col
+    flex: 0 0 100%
+    width: 100%
+    padding-right: 8px
+    +d
+        flex: 0 0 calc(100% - 296px)
+        width: calc(100% - 296px)
+    +t
+        width: 100%
+        padding: 0
+        
+
+.card
+    &:not(:last-child)
+        margin-bottom: 8px
+
+.rowField
+    margin-bottom: 30px
+
+.editor
+    &:not(:last-child)
+        margin-bottom: 32px
+        +d
+            margin-bottom: 24px
+
+.group
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-end
+    margin: 0 -6px -12px
+    +m
+        display: block
+        margin: 0
+    .field
+        flex: 0 0 calc(50% - 12px)
+        width: calc(50% - 12px)
+        margin: 0 6px 12px
+        +m
+            width: 100%
+            margin: 12px 0 0
+
+.field
+    text-transform: capitalize
+    &:not(:last-child)
+        margin-bottom: 32px
+        +d
+            margin-bottom: 24px
+
+.buttonContainer 
+
+.button
+    width: 50%
+    +m
+        margin-right: 8px
+        flex-grow: 1
+
+.button1
+    width: 100%
+    +m
+        margin-right: 8px
+        flex-grow: 1
+
+.wrapper
+    padding-bottom: 24px
+    background: $n1
+    border-radius: 8px
+    +dark
+        background: $n7
+    +m
+        overflow-x: scroll
+
+.table
+    display: table
+    width: 100%
+
+.rowTable
+    display: table-row
+    &:first-child
+        .colTable
+            padding-top: 16px
+            padding-bottom: 16px
+            +caption2
+            font-weight: 500
+            color: $n4
+    &:nth-child(2n)
+        .colTable
+            background: rgba($n3, .35)
+            +dark
+                background: rgba($n6, .3)
+
+.colTable
+    display: table-cell
+    padding: 10px 16px
+    +base2
+    &:first-child
+        padding-left: 24px
+        white-space: nowrap
+        color: $n4
+        +m
+            padding-left: 16px
+    &:nth-child(2)
+        +m
+            display: none
+    &:last-child
+        padding-right: 24px 
+        cursor: pointer
+        +m
+            padding-right: 16px
+
+.status
+    font-size: 14px
+    line-height: 28px
+    font-weight: 600
+    text-transform: capitalize
+
+.paginationBar 
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  margin-top: 50px
